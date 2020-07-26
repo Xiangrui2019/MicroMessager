@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroMessager.Tracker", "MicroMessager.Tracker\MicroMessager.Tracker.csproj", "{B07035EF-BC13-4295-A182-1599638A3071}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroMessager.MessagerServer", "MicroMessager.MessagerServer\MicroMessager.MessagerServer.csproj", "{8C5ACF6B-ABD3-4A9F-AD33-F432D2275DBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroMessager.Entites", "MicroMessager.Entites\MicroMessager.Entites.csproj", "{D1D4927B-4EC9-403B-AC99-9024F7FA35B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroMessager.SDKs", "MicroMessager.SDKs\MicroMessager.SDKs.csproj", "{D785D48A-E8DF-447C-8EE6-4C06C95CD4B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B07035EF-BC13-4295-A182-1599638A3071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B07035EF-BC13-4295-A182-1599638A3071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B07035EF-BC13-4295-A182-1599638A3071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B07035EF-BC13-4295-A182-1599638A3071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5ACF6B-ABD3-4A9F-AD33-F432D2275DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5ACF6B-ABD3-4A9F-AD33-F432D2275DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5ACF6B-ABD3-4A9F-AD33-F432D2275DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C5ACF6B-ABD3-4A9F-AD33-F432D2275DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1D4927B-4EC9-403B-AC99-9024F7FA35B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1D4927B-4EC9-403B-AC99-9024F7FA35B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1D4927B-4EC9-403B-AC99-9024F7FA35B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1D4927B-4EC9-403B-AC99-9024F7FA35B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D785D48A-E8DF-447C-8EE6-4C06C95CD4B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D785D48A-E8DF-447C-8EE6-4C06C95CD4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D785D48A-E8DF-447C-8EE6-4C06C95CD4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D785D48A-E8DF-447C-8EE6-4C06C95CD4B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1C30BD8-C169-47C6-95E5-FED651AD5BCD}
+	EndGlobalSection
+EndGlobal
