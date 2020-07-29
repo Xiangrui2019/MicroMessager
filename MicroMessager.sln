@@ -23,6 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroMessager", "MicroMessa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroMessager.DBTools", "MicroMessager.DBTools\MicroMessager.DBTools.csproj", "{51A94BD7-B87F-44AC-84A1-A24936CFD5E0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildBlocks", "BuildBlocks", "{56DAAC9F-1314-4876-B55E-F18F53867E22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{347D20DE-BDF3-4215-9003-F4927ECC50B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +56,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B07035EF-BC13-4295-A182-1599638A3071} = {347D20DE-BDF3-4215-9003-F4927ECC50B2}
+		{8C5ACF6B-ABD3-4A9F-AD33-F432D2275DBD} = {347D20DE-BDF3-4215-9003-F4927ECC50B2}
+		{D1D4927B-4EC9-403B-AC99-9024F7FA35B3} = {56DAAC9F-1314-4876-B55E-F18F53867E22}
+		{D785D48A-E8DF-447C-8EE6-4C06C95CD4B7} = {56DAAC9F-1314-4876-B55E-F18F53867E22}
+		{51A94BD7-B87F-44AC-84A1-A24936CFD5E0} = {56DAAC9F-1314-4876-B55E-F18F53867E22}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C1C30BD8-C169-47C6-95E5-FED651AD5BCD}
