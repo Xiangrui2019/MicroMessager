@@ -28,7 +28,7 @@ namespace MicroMessager.MessagerServer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite("Data Source = app_" + Guid.NewGuid() + ".db"));
+                options.UseSqlite("Data Source = app.db"));
 
             services.AddHttpClient();
             services.AddTransient<HTTPService>();
