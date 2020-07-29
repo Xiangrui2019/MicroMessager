@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MicroMessager.MessagerServer.Controllers
 {
-    [ApiController]
     public class ControlController : Controller
     {
         private readonly TrackerService _trackerService;

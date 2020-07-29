@@ -12,7 +12,6 @@ using Microsoft.Extensions.Configuration;
 
 namespace MicroMessager.MessagerServer.Controllers
 {
-    [ApiController]
     public class ChatController : Controller
     {
         private readonly ApplicationDbContext _dbContext;

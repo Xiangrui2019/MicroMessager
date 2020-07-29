@@ -11,7 +11,6 @@ using Microsoft.VisualBasic;
 
 namespace MicroMessager.Tracker.Controllers
 {
-    [ApiController]
     public class ServerClientsController : Controller
     {
         private readonly ApplicationDbContext _dbContext;

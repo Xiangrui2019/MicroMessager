@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MicroMessager.MessagerServer.Controllers
 {
-    [ApiController]
     public class HomeController : Controller
     {
         // 检查服务器是否活着

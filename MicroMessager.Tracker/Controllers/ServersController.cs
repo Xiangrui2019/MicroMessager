@@ -9,7 +9,6 @@ using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 
 namespace MicroMessager.Tracker.Controllers
 {
-    [ApiController]
     public class ServersController : Controller
     {
         private readonly ApplicationDbContext _dbContext;
