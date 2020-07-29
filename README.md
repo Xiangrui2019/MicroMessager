@@ -7,3 +7,5 @@
 
 ## 项目结构
 
+MicroMessager.Tracker: 用户跟踪服务器, 类似于BT的Tracker, 用于对应用户->服务器Ip, 方便进行查找
+MicroMessager.MessagerServer: 消息服务器, 真正的按照用户进行消息传递, 传输用户的消息.
