@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroMessager", "MicroMessa
 		WORKSPACE = WORKSPACE
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroMessager.DBTools", "MicroMessager.DBTools\MicroMessager.DBTools.csproj", "{51A94BD7-B87F-44AC-84A1-A24936CFD5E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{D785D48A-E8DF-447C-8EE6-4C06C95CD4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D785D48A-E8DF-447C-8EE6-4C06C95CD4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D785D48A-E8DF-447C-8EE6-4C06C95CD4B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A94BD7-B87F-44AC-84A1-A24936CFD5E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A94BD7-B87F-44AC-84A1-A24936CFD5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A94BD7-B87F-44AC-84A1-A24936CFD5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A94BD7-B87F-44AC-84A1-A24936CFD5E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

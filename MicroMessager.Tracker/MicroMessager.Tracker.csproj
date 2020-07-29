@@ -9,10 +9,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.4" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MicroMessager.DBTools\MicroMessager.DBTools.csproj" />
     <ProjectReference Include="..\MicroMessager.SDKs\MicroMessager.SDKs.csproj" />
   </ItemGroup>
 
