@@ -52,7 +52,7 @@ namespace MicroMessager.MessagerServer
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }

@@ -7,9 +7,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroMessager.Tracker", "Mi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroMessager.MessagerServer", "MicroMessager.MessagerServer\MicroMessager.MessagerServer.csproj", "{8C5ACF6B-ABD3-4A9F-AD33-F432D2275DBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroMessager.Entites", "MicroMessager.Entites\MicroMessager.Entites.csproj", "{D1D4927B-4EC9-403B-AC99-9024F7FA35B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroMessager.Entites", "MicroMessager.Entites\MicroMessager.Entites.csproj", "{D1D4927B-4EC9-403B-AC99-9024F7FA35B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroMessager.SDKs", "MicroMessager.SDKs\MicroMessager.SDKs.csproj", "{D785D48A-E8DF-447C-8EE6-4C06C95CD4B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroMessager.SDKs", "MicroMessager.SDKs\MicroMessager.SDKs.csproj", "{D785D48A-E8DF-447C-8EE6-4C06C95CD4B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroMessager", "MicroMessager", "{8B27F680-B766-4871-B909-EC164F675261}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		CHANGELOG = CHANGELOG
+		LICENSE = LICENSE
+		ONWERS = ONWERS
+		README.md = README.md
+		WORKSPACE = WORKSPACE
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

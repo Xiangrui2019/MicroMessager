@@ -13,7 +13,6 @@ using Microsoft.Extensions.Configuration;
 namespace MicroMessager.MessagerServer.Controllers
 {
     [ApiController]
-    [Route("{controller}/{action}")]
     public class ChatController : Controller
     {
         private readonly ApplicationDbContext _dbContext;

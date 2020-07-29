@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace MicroMessager.MessagerServer.Controllers
 {
     [ApiController]
-    [Route("{controller}/{action}")]
     public class ControlController : Controller
     {
         private readonly TrackerService _trackerService;

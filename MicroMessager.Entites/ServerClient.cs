@@ -15,6 +15,7 @@ namespace MicroMessager.Entites
         // 服务器导航属性
         public Server Server { get; set; }
 
+        // 服务器对应客户端创建时间
         public long CreatedTimestamp { get; set; } =
             (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000;
     }
