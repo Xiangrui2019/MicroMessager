@@ -32,8 +32,9 @@ namespace MicroMessager.MessagerServer.Controllers
             _messagerService = messagerService;
         }
 
+        // 发送消息
         [HttpPost]
-        public async Task<IActionResult> SendMessage([FromForm] SendMessageDto dto)
+        public async Task<IActionResult> SendMessage(SendMessageDto dto)
         {
             var message = new Message()
             {
@@ -48,17 +49,18 @@ namespace MicroMessager.MessagerServer.Controllers
             {
                 await _messagerService.PassThroughMessage(server.ServerIp, message);
 
-                return Json(new { });
+                return Ok();
             }
 
             await _dbContext.AddAsync(message);
             await _dbContext.SaveChangesAsync();
 
-            return Json(new { });
+            return Ok();
         }
 
+        // 获取某个用户的未读消息
         [HttpGet]
-        public async Task<IActionResult> GetUnreadMessages([FromQuery] int userId)
+        public async Task<IActionResult> GetUnreadMessages(int userId)
         {
             var messages = await _dbContext
                 .Messages
@@ -74,7 +76,7 @@ namespace MicroMessager.MessagerServer.Controllers
 
             await _dbContext.SaveChangesAsync();
 
-            return Json(messages);
+            return Ok();
         }
     }
 }

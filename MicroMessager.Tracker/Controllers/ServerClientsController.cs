@@ -12,18 +12,18 @@ using Microsoft.VisualBasic;
 namespace MicroMessager.Tracker.Controllers
 {
     [ApiController]
-    [Route("{controller}/{action}")]
-    public class ServerClientController : Controller
+    public class ServerClientsController : Controller
     {
         private readonly ApplicationDbContext _dbContext;
 
-        public ServerClientController(ApplicationDbContext dbContext)
+        public ServerClientsController(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
+        // 跟踪信息更新, 跟踪用户现在在哪个服务器
         [HttpPost]
-        public async Task<IActionResult> Register([FromForm] CreateServerClientDto dto)
+        public async Task<IActionResult> Track(CreateServerClientDto dto)
         {
             var server = await _dbContext
                 .Servers
@@ -39,9 +39,10 @@ namespace MicroMessager.Tracker.Controllers
             await _dbContext.AddAsync(serverClient);
             await _dbContext.SaveChangesAsync();
 
-            return Json(new {});
+            return Ok();
         }
 
+        // 获取用户所在的当前服务器
         [HttpGet]
         public async Task<IActionResult> CurrentServerByUserId([FromQuery] int userId)
         {
@@ -55,9 +56,10 @@ namespace MicroMessager.Tracker.Controllers
 
             var serverClient = serverClients[0];
 
-            return Json(serverClient.Server);
+            return Ok(serverClient.Server);
         }
-
+        
+        // 获取用户所在的上一个服务器
         [HttpGet]
         public async Task<IActionResult> LastServerByUserId([FromQuery] int userId)
         {
@@ -71,7 +73,7 @@ namespace MicroMessager.Tracker.Controllers
 
             var serverClient = serverClients[1];
 
-            return Json(serverClient.Server);
+            return Ok(serverClient.Server);
         }
     }
 }

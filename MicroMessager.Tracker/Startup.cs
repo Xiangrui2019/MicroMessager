@@ -46,7 +46,7 @@ namespace MicroMessager.Tracker
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }

@@ -24,7 +24,7 @@ namespace MicroMessager.MessagerServer.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ServerChange([FromForm] int userId)
+        public async Task<IActionResult> ServerChange(int userId)
         {
             var lastClientServer = await _trackerService.GetLastClientServerByUserId(userId);
             var messages = await _messagerService.GetUnreadMessages(lastClientServer.ServerIp, userId);
@@ -36,16 +36,16 @@ namespace MicroMessager.MessagerServer.Controllers
 
             await _dbContext.SaveChangesAsync();
 
-            return Json(new {});
+            return Ok();
         }
 
         [HttpPost]
-        public async Task<IActionResult> PassThroughMessage([FromForm] Message message)
+        public async Task<IActionResult> PassThroughMessage(Message message)
         {
             await _dbContext.AddAsync(message);
             await _dbContext.SaveChangesAsync();
 
-            return Json(new { });
+            return Ok();
         }
     }
 }

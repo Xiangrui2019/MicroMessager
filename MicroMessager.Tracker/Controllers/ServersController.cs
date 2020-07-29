@@ -10,16 +10,16 @@ using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 namespace MicroMessager.Tracker.Controllers
 {
     [ApiController]
-    [Route("{controller}/{action}")]
-    public class ServerController : Controller
+    public class ServersController : Controller
     {
         private readonly ApplicationDbContext _dbContext;
 
-        public ServerController(ApplicationDbContext dbContext)
+        public ServersController(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
+        // 获取可用服务器列表
         [HttpGet]
         public async Task<IActionResult> GetServerList()
         {
