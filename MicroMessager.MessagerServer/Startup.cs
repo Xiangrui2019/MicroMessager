@@ -28,9 +28,7 @@ namespace MicroMessager.MessagerServer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-            {
-                options.UseNpgsql(Configuration.GetConnectionString("DatabaseConnection"));
-            });
+                options.UseSqlServer(Configuration.GetConnectionString("DatabaseConnection")));
 
             services.AddHttpClient();
             services.AddTransient<HTTPService>();
